@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function FighterForm({ onSubmit }) {
   const [fighter, setFighter] = useState("");
   return (
-    <div className="sm:col-span-3 w-4/5">
+    <div className="w-4/5">
       <div>
         <label
           htmlFor="email"
