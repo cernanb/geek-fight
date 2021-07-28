@@ -30,7 +30,10 @@ export default function Battle() {
 
       <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-2 mx-auto">
         {!fighterOne ? (
-          <FighterForm onSubmit={(fighter) => setFighterOne(fighter)} />
+          <FighterForm
+            placeholder="cernanb"
+            onSubmit={(fighter) => setFighterOne(fighter)}
+          />
         ) : (
           <FighterPreview
             fighter={fighterOne}
@@ -39,7 +42,10 @@ export default function Battle() {
         )}
 
         {!fighterTwo ? (
-          <FighterForm onSubmit={(fighter) => setFighterTwo(fighter)} />
+          <FighterForm
+            placeholder="alicekb"
+            onSubmit={(fighter) => setFighterTwo(fighter)}
+          />
         ) : (
           <FighterPreview
             fighter={fighterTwo}
