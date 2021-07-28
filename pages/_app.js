@@ -54,6 +54,13 @@ function MyApp({ Component, pageProps }) {
                       {item.name}
                     </Link>
                   ))}
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/cernanb/geek-fight"
+                  >
+                    Github
+                  </a>
                 </div>
               </nav>
             </div>
