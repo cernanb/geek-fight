@@ -1,19 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import fistIcon from "../public/fist.png";
-
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-
-const navigation = [
-  { name: "Battle", to: "/battle" },
-  { name: "Instructions", to: "/instructions" },
-  { name: "About", to: "/about" },
-  { name: "Leaderboard (Coming Soon)", to: "/leader-board" },
-];
 
 export default function Example() {
   return (
