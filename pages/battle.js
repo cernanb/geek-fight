@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import FighterForm from "../components/fighter-form";
 import FighterPreview from "../components/fighter-preview";
@@ -48,12 +49,18 @@ export default function Battle() {
       </div>
       {fighterOne && fighterTwo && (
         <div className="text-center">
-          <button
-            type="button"
-            className="inline-block items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none"
+          <Link
+            href={`/results?fighterOne=${fighterOne}&fighterTwo=${fighterTwo}`}
           >
-            Start Fight
-          </button>
+            <a>
+              <button
+                type="button"
+                className="inline-block items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none"
+              >
+                Start Fight
+              </button>
+            </a>
+          </Link>
         </div>
       )}
     </div>
