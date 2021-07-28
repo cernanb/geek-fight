@@ -107,7 +107,9 @@ function MyApp({ Component, pageProps }) {
           </>
         )}
       </Popover>
-      <Component {...pageProps} />
+      <div className="max-w-7xl mx-auto">
+        <Component {...pageProps} />
+      </div>
     </div>
   );
 }
