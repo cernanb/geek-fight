@@ -9,7 +9,6 @@ import fistIcon from "../public/fist.png";
 const navigation = [
   { name: "Battle", to: "/battle" },
   { name: "Instructions", to: "/instructions" },
-  { name: "About", to: "/about" },
   { name: "Leaderboard (Coming Soon)", to: "/leader-board" },
 ];
 
